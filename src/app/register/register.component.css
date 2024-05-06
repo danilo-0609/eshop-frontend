@@ -1,0 +1,16 @@
+h1 {
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.container-md {
+  font-family: 'Alice', sans-serif;
+}
+
+h2 {
+  font-weight: 900;
+}
+
+label {
+  font-weight: 700;
+}

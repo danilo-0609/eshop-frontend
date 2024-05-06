@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Alice';
+  src: url('assets/fonts/Alice/Alice-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-ExtraLight';
+  src: url('../src/assets/fonts/Poppins-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url('../src/assets/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-LightItalic';
+  src: url('../src/assets/fonts/Poppins-LightItalic.ttf');
+}

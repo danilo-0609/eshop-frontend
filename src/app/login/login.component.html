@@ -1,0 +1,65 @@
+<div class="container-fluid px-0 g-0">
+  <div class="row g-0">
+    <div class="col-md-5 mt-2 d-flex justify-content-center vh-100">
+      
+      <div class="row-md-12 g-0">
+        <!--Title-->
+        <div class="col-md-12 mt-2 d-flex justify-content-center">
+          <h1 class="h1">LA TALLA PERFECTA</h1>
+        </div>
+        
+        <!--Welcome-->  
+        <div class="col-md-12 mt-4 d-flex justify-content-center">
+          <h2 class="h2">¡Bienvenido de nuevo!</h2>
+        </div>
+
+        <!--Welcome message-->  
+        <div class="col-md-12 d-flex justify-content-center">
+          <p class="h6 text-center mt-4">¡Bienvenido de nuevo! Ingresa tus datos de ingreso para empezar.</p>
+        </div>
+
+        <!--Login form-->  
+        <div class="col-md-12 d-flex justify-content-center">
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="form-group mt-4">
+                <label style="font-weight: 500;" for="exampleInputEmail1">Correo electrónico</label>
+                <input formControlName="email" type="email" class="form-control border border-dark" id="email" aria-describedby="emailHelp" placeholder="Digita tu email" required>
+                <small *ngIf="form.get('email').invalid && form.get('email').touched" class="form-text text-danger mb-5">*El correo electrónico es requerido</small>
+              
+                <div class="col-md-12 mt-1">
+                  <small id="emailHelp" class="form-text text-muted">No compartiremos nunca tu correo electrónico con nadie más.</small>
+                </div>
+                
+            </div>
+            <div class="form-group mt-3">
+
+                <label for="exampleInputPassword1">Contraseña</label>
+                <input formControlName="password" type="password" class="form-control border border-dark" id="exampleInputPassword1" placeholder="Ingresa tu contraseña" required>
+                <small *ngIf="form.get('password').invalid && form.get('password').touched" class="form-text text-danger">*La contraseña es requerida</small>
+
+                <div class="form-check mt-2">
+                  <input class="form-check-input border border-dark" type="checkbox" id="flexFormCheck">
+                  <label class="form-check-label" for="flexFormCheck">Recuérdame</label>
+                  <a class="text-decoration-none m-4" href="">¿Olvidaste tu contraseña?</a>
+              </div>
+
+              <div class="sign-in-buttons text-center">
+                <button (click)="navigateToHomePage()" class="sign-in-button border border-white btn btn-dark m-3 w-75 " type="submit">Inicia Sesión</button>
+                <button class="btn border border-dark btn-white m-3 w-75" type="button"><i class="fa-brands fa-google" ></i>Inicia Sesión con Google</button>
+            </div>
+            <p class="text-center mt-2">¿No tienes una cuenta?  <a href="/register">Regístrate!</a></p>
+
+            </div>
+            <div class="form-check">
+            </div>
+        </form>
+        </div>        
+
+      </div>
+
+    </div>
+    <div class="col-md-7 d-flex vh-100 b-0 object-cover">
+      <img class="img-fluid d-none d-md-block" src="../../assets/images/start-image.jpg" alt="start-image">
+    </div>
+  </div>
+</div>

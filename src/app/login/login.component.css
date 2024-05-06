@@ -1,0 +1,12 @@
+p, a {
+  font-family: 'Poppins-ExtraLight';
+}
+
+h1, h2 {
+  font-family: 'Poppins-ExtraLight';
+  font-weight: 700;
+}
+
+label {
+  font-family: 'Poppins-Medium';
+}
